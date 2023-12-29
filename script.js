@@ -1,10 +1,11 @@
 function getFormvalue() {
-    //Write your code here
-	event.preventDefault();
+    // Prevent the default form submission behavior
+    event.preventDefault();
 
-	let firstName = document.getElementsByName('fName')[0].value;
-	let lastName = document.getElementsByName('lName')[0].value;
+    // Get the values from the form fields
+    let firstName = document.getElementsByName('fname')[0].value;
+    let lastName = document.getElementsByName('lname')[0].value;
 
-	alert('First Name: '+firstName+"\n Last Name: "+lastName);
-
+    // Display the values using alert
+    alert('First Name: ' + firstName + '\nLast Name: ' + lastName);
 }
